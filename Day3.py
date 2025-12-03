@@ -27,9 +27,9 @@ def find_battery_output(line, num_digits):
     # strip the line, so that we don't have to deal with whitespace
     line = line.strip()
     
-    # If the line doesn't have enough digits, return None or handle appropriately
+    # If the line doesn't have enough digits, return 0
     if len(line) < num_digits:
-        return None
+        return 0
     
     # Store the indices of the selected digits
     digit_indices = []
